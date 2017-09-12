@@ -10,11 +10,11 @@
 
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body>
+<body id="betica-online" class="is-mobile">
   <header class="container is-fluid header">
     <nav class="navbar">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">Betica Online</a>
+      <div class="navbar-brand" title="Betica Online">
+        <a class="navbar-item" href="#"><i class="fa fa-diamond" aria-hidden="true"></i></a>
         <div class="navbar-burger burger" data-target="navigation">
           <span></span>
           <span></span>
@@ -22,13 +22,38 @@
         </div>
       </div>
       <div id="navigation" class="navbar-menu">
+        <div class="navbar-start search">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-small" type="text" placeholder="Search">
+            <span class="icon is-small is-left">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+        </div>
+        <div class="navbar-end cart" title="Your have 2 item in your cart">
+          <a class="navbar-item" href="#">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <div class="item-count">
+              1
+            </div>
+          </a>
+        </div>
         <div class="navbar-end main-nav">
-          <a class="navbar-item" href="#">Why Starwars?</a>
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">Store</a>
+          <a class="navbar-item" href="#">About</a>
+          <a class="navbar-item" href="#">Promo</a>
+          <a class="navbar-item" href="#">Enquire</a>
         </div>
       </div>
     </nav>
   </header>
+  <div class="banner">
+    <h1>Betica Online Shop</h1>
+    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
+  </div>
   <section class="section">
+
     <div class="container is-fluid">
       <!-- House of cards -->
       <div id="items">
@@ -41,7 +66,9 @@
             </header>
             <div class="card-content">
               <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <img src="http://via.placeholder.com/150x150" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="release-date"><strong>Release Date: </strong> <span class="date">Item Description</span></div>
                 <br>
               </div>
@@ -55,6 +82,15 @@
       </div>
     </div>
   </section>
+  <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Betica Online</strong> by <a href="#">Marvi Gatus</a>.
+      </p>
+    </div>
+  </div>
+</footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>

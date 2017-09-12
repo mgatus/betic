@@ -53,7 +53,7 @@ xhr.onload = function() {
       console.log(key);
       var substring = "c";
       if(key.indexOf(substring) !== -1 ) {
-        phoneCategory.append("<div id="+ key +"><h2 class='categories'>"+ value.title +"</h2></div>");
+        phoneCategory.append('<div id='+ key +'><h2 class="categories"><span class="category">'+ value.title +'</span><a href="#" class="button">View All</a></h2></div>');
       }
       //var array = $("#items").getIdArray();
       //console.log('Hoooooaaaaah! '+ array);
