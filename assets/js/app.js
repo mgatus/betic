@@ -25,7 +25,6 @@ xhr.open('GET', 'data/data.json', true);
 xhr.onload = function() {
   if(this.readyState == 4 && this.status == 200){
     let info = JSON.parse(this.responseText);
-
     // ++++ Get Generated ID Function ++++ //
     jQuery.fn.getIdArray = function() {
       let ret = [];
@@ -41,7 +40,7 @@ xhr.onload = function() {
       let tmpl = maintmpl.clone().appendTo(el);
       tmpl.find('.card-header-title').html("<div>"+value.title+"</div>");
       tmpl.find('.release-date .date').html("<div>"+value.releaseDate+"</div>");
-      tmpl.find('.card-footer .price').html("<div>$"+value.price+"</div>");
+      tmpl.find('.price-tag').html("<div>$"+value.price+"</div>");
       tmpl.show();
     }
 
@@ -59,14 +58,14 @@ xhr.onload = function() {
       //console.log('Hoooooaaaaah! '+ array);
 
       $.each(value, function(k, v){
-        let items = $("#items").getIdArray();
+        //let items = $("#items").getIdArray();
         let data = $("#items").getIdArray();
         for(let i = 0; i < data.length; i++ ) {
            if(data[i] === v) {
             //  console.log('eto ang data '+ data[i]);
             //  console.log('eto ang key '+ key);
              //console.log('#'+items[i]);
-             findingNemo('#'+items[i],value);
+             findingNemo('#'+data[i],value);
            }
         }
 

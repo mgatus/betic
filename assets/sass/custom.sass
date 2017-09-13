@@ -65,6 +65,9 @@ header.header
   h1
     font-size: 5.5rem
 
+.section
+  padding: 1rem 1.5rem
+
 .card-template
   display: none
 
@@ -73,7 +76,6 @@ header.header
   color: #d86a6a
   font-weight: 100 !important
   font-size: 1.3rem
-  border-top: 1px dashed #d6d6d6
   padding: 2% 0 1%
   position: relative
 
@@ -94,10 +96,27 @@ header.header
       float: left
       margin: 0 2% 0 0
 
+.price-tag
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 10px
+  background: #444
+  padding: 0px 9px
+  border-radius: 30px
+  color: #fff
+
 #c001
   h2
     color: $mainColor
-    margin: 0 0 2%
+    margin: 0 0 2% 8%
+    border: none
+    &:before
+      font-family: FontAwesome
+      position: absolute
+      left: -20px
+      top: 7px
+      content: '\f10b'
   .card-header-title
     color: #333
 
@@ -111,9 +130,18 @@ header.header
     color: #333
     font-weight: 700
 
+#c002,#c003,#c004
+  margin-top: 10%
 #c002
   h2
     color: $mainColor
+    margin-left: 8%
+    &:before
+      font-family: FontAwesome
+      position: absolute
+      left: -25px
+      top: 7px
+      content: '\f109'
   .card-header-title
     color: #333
   .release-date
@@ -129,6 +157,13 @@ header.header
 #c003
   h2
     color: $mainColor
+    margin-left: 10%
+    &:before
+      font-family: FontAwesome
+      position: absolute
+      left: -25px
+      top: 7px
+      content: '\f1e6'
   .card-header-title
     color: #333
   .release-date
@@ -144,6 +179,13 @@ header.header
 #c004
   h2
     color: $mainColor
+    margin-left: 8%
+    &:before
+      font-family: FontAwesome
+      position: absolute
+      left: -20px
+      top: 7px
+      content: '\f0f7'
   .card-header-title
     color: #333
   .release-date
@@ -153,6 +195,7 @@ header.header
     background: #e4e4e4
     color: #333
     font-weight: 700
+
 
 .cart
   position: relative
@@ -214,7 +257,9 @@ footer.footer
 
   .banner
     h1
-      font-size: 2.5rem
+      font-size: 2.1rem
+    small
+      font-size: .8em
 
   .release-date
     margin: 20% 0 0
@@ -223,3 +268,6 @@ footer.footer
     .content
       img
         margin: 0 5% 0 0
+
+  footer.footer
+    font-size: 0.7em

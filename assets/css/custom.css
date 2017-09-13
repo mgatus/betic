@@ -1,279 +1,339 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
-		transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 body {
-		font-family: 'Open Sans', sans-serif;
-		line-height: 1.5;
-		font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 100%;
 }
 
 header.header {
-		background: #63b9e4;
-		margin: 0 !important;
-		padding: 0 32px;
-		color: #fff;
+  background: #63b9e4;
+  margin: 0 !important;
+  padding: 0 32px;
+  color: #fff;
 }
 
 header.header > * {
-		background: transparent;
+  background: transparent;
 }
 
 header.header a {
-		color: #fff;
+  color: #fff;
 }
 
 .navbar-burger {
-		position: relative;
-		z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .main-nav {
-		position: relative;
-		width: 87%;
-		z-index: 2;
+  position: relative;
+  width: 87%;
+  z-index: 2;
 }
 
 .main-nav a {
-		color: #0d7f8c;
-		transition: color 0.2s ease;
+  color: #0d7f8c;
+  transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
-		color: #333;
+  color: #333;
 }
 
 .navbar-brand .fa {
-		margin: 0 1%;
-		font-size: 2rem;
+  margin: 0 1%;
+  font-size: 2rem;
 }
 
 .navbar-brand a:hover {
-		background: transparent;
-		color: #fff;
+  background: transparent;
+  color: #fff;
 }
 
 .search {
-		align-items: center;
-		justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .search input {
-		border-radius: 30px !important;
+  border-radius: 30px !important;
 }
 
 .banner {
-		background-image: url("../img/bg2.png");
-		background-color: #333;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		height: 25vw;
-		display: flex;
-		flex-direction: column;
-		color: #fff;
-		justify-content: center;
-		align-items: center;
+  background-image: url("../img/bg2.png");
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner h1 {
-		font-size: 5.5rem;
+  font-size: 5.5rem;
+}
+
+.section {
+  padding: 1rem 1.5rem;
 }
 
 .card-template {
-		display: none;
+  display: none;
 }
 
 .categories {
-		margin: 2% 0 2%;
-		color: #d86a6a;
-		font-weight: 100 !important;
-		font-size: 1.3rem;
-		border-top: 1px dashed #d6d6d6;
-		padding: 2% 0 1%;
-		position: relative;
+  margin: 2% 0 2%;
+  color: #d86a6a;
+  font-weight: 100 !important;
+  font-size: 1.3rem;
+  padding: 2% 0 1%;
+  position: relative;
 }
 
 .categories a.button {
-		border-radius: 30px;
-		background: #63b9e4;
-		color: #fff;
-		margin: 0 2%;
-		font-size: 0.8rem;
-		font-weight: lighter;
-		position: absolute;
-		right: 0;
+  border-radius: 30px;
+  background: #63b9e4;
+  color: #fff;
+  margin: 0 2%;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  position: absolute;
+  right: 0;
 }
 
 .card-content .content {
-		font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .card-content .content img {
-		float: left;
-		margin: 0 2% 0 0;
+  float: left;
+  margin: 0 2% 0 0;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background: #444;
+  padding: 0px 9px;
+  border-radius: 30px;
+  color: #fff;
 }
 
 #c001 h2 {
-		color: #63b9e4;
-		margin: 0 0 2%;
+  color: #63b9e4;
+  margin: 0 0 2% 8%;
+  border: none;
+}
+
+#c001 h2:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  content: '\f10b';
 }
 
 #c001 .card-header-title {
-		color: #333;
+  color: #333;
 }
 
 #c001 .release-date {
-		margin: 8% 0 0;
-		width: 100%;
-		clear: both;
+  margin: 8% 0 0;
+  width: 100%;
+  clear: both;
 }
 
 #c001 .card-footer-item {
-		background: #e4e4e4;
-		color: #333;
-		font-weight: 700;
+  background: #e4e4e4;
+  color: #333;
+  font-weight: 700;
+}
+
+#c002, #c003, #c004 {
+  margin-top: 10%;
 }
 
 #c002 h2 {
-		color: #63b9e4;
+  color: #63b9e4;
+  margin-left: 8%;
+}
+
+#c002 h2:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: -25px;
+  top: 7px;
+  content: '\f109';
 }
 
 #c002 .card-header-title {
-		color: #333;
+  color: #333;
 }
 
 #c002 .release-date {
-		margin: 8% 0 0;
-		width: 100%;
-		clear: both;
+  margin: 8% 0 0;
+  width: 100%;
+  clear: both;
 }
 
 #c002 .card-footer-item {
-		background: #e4e4e4;
-		color: #333;
-		font-weight: 700;
+  background: #e4e4e4;
+  color: #333;
+  font-weight: 700;
 }
 
 #c003 h2 {
-		color: #63b9e4;
+  color: #63b9e4;
+  margin-left: 10%;
+}
+
+#c003 h2:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: -25px;
+  top: 7px;
+  content: '\f1e6';
 }
 
 #c003 .card-header-title {
-		color: #333;
+  color: #333;
 }
 
 #c003 .release-date {
-		margin: 8% 0 0;
-		width: 100%;
-		clear: both;
+  margin: 8% 0 0;
+  width: 100%;
+  clear: both;
 }
 
 #c003 .card-footer-item {
-		background: #e4e4e4;
-		color: #333;
-		font-weight: 700;
+  background: #e4e4e4;
+  color: #333;
+  font-weight: 700;
 }
 
 #c004 h2 {
-		color: #63b9e4;
+  color: #63b9e4;
+  margin-left: 8%;
+}
+
+#c004 h2:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  content: '\f0f7';
 }
 
 #c004 .card-header-title {
-		color: #333;
+  color: #333;
 }
 
 #c004 .release-date {
-		margin: 8% 0 0;
+  margin: 8% 0 0;
 }
 
 #c004 .card-footer-item {
-		background: #e4e4e4;
-		color: #333;
-		font-weight: 700;
+  background: #e4e4e4;
+  color: #333;
+  font-weight: 700;
 }
 
 .cart {
-		position: relative;
-		width: 63px;
+  position: relative;
+  width: 63px;
 }
 
 .cart a {
-		position: relative;
-		transition: none !important;
+  position: relative;
+  transition: none !important;
 }
 
 .cart a:hover {
-		background: transparent;
+  background: transparent;
 }
 
 .cart .fa {
-		margin: 0 5%;
-		font-size: 2rem;
+  margin: 0 5%;
+  font-size: 2rem;
 }
 
 .cart .item-count {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: #666666;
-		color: #fff;
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		z-index: 1;
-		top: 6px;
-		right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #666666;
+  color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 1;
+  top: 6px;
+  right: 4px;
 }
 
 footer.footer {
-		background: #63b9e4;
-		color: #fff;
-		padding: 3rem 1.5rem;
+  background: #63b9e4;
+  color: #fff;
+  padding: 3rem 1.5rem;
 }
 
 footer.footer a {
-		color: #666666;
+  color: #666666;
 }
 
 @media screen and (max-width: 1023px) {
-		.banner {
-				height: 35vw;
-		}
-		.navbar-menu.is-active {
-				display: flex;
-				position: fixed;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				width: 80%;
-				z-index: 2;
-				background: rgba(99, 185, 228, 0.98);
-				padding: 0 5%;
-				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.48);
-				flex-direction: column-reverse;
-				justify-content: flex-end;
-				padding-top: 15%;
-		}
-		.navbar-menu.is-active a {
-				color: #fff;
-				text-shadow: 1px 1px 1px rgba(14, 14, 14, 0.24);
-		}
-		.navbar-menu.is-active a:hover {
-				color: #333;
-		}
-		.navbar-menu.is-active .search {
-				margin: 5% 0;
-		}
-		.banner h1 {
-				font-size: 2.5rem;
-		}
-		.release-date {
-				margin: 20% 0 0;
-		}
-		.card-content .content img {
-				margin: 0 5% 0 0;
-		}
+  .banner {
+    height: 35vw;
+  }
+  .navbar-menu.is-active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    z-index: 2;
+    background: rgba(99, 185, 228, 0.98);
+    padding: 0 5%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.48);
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 15%;
+  }
+  .navbar-menu.is-active a {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(14, 14, 14, 0.24);
+  }
+  .navbar-menu.is-active a:hover {
+    color: #333;
+  }
+  .navbar-menu.is-active .search {
+    margin: 5% 0;
+  }
+  .banner h1 {
+    font-size: 2.1rem;
+  }
+  .banner small {
+    font-size: .8em;
+  }
+  .release-date {
+    margin: 20% 0 0;
+  }
+  .card-content .content img {
+    margin: 0 5% 0 0;
+  }
+  footer.footer {
+    font-size: 0.7em;
+  }
 }
